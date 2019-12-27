@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Model\BetaalRekening.cs" />
     <Compile Include="Model\Login.cs" />
+    <Compile Include="Model\Transactie.cs" />
+    <Compile Include="Model\TransactieLijst.cs" />
     <Compile Include="View%28incl Controllers%29\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
