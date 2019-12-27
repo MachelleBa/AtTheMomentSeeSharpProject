@@ -10,12 +10,19 @@ namespace AtTheMomentSeeSharpSquad.Model
     {
         private List<Transactie> transacties;
         //   private Gebruiker gebruiker;
+        //   private AutomaatSassy sassy;
 
         //public TransactieLijst(Gebruiker gebruiker, Transactie transactie) {
 
         //    this.transacties.Add(transactie);
         //    this.gebruiker = gebruiker;
 
+        //}
+
+        //voor als je de transactielijst van een automaat op wil halen, in dit geval is er dan geen gebruiker
+        //public TransactieLijst(AutomaatSassy sassy, Transactie transactie) {
+        //    this.sassy = sassy;
+        //    this.transacties.Add(transactie);
         //}
 
         public List<Transactie> getTransactieLijst() {
