@@ -8,21 +8,21 @@ namespace AtTheMomentSeeSharpSquad.Model
 {
     class Gebruiker
     {
-        private String voornaam;
-        private String achternaam;
+        private string voornaam;
+        private string achternaam;
 
-        public Gebruiker(String voornaam, String achternaam)
+        public Gebruiker(string voornaam, string achternaam)
         {
             this.voornaam = voornaam;
             this.achternaam = achternaam;
         }
 
-        private String getVoornaam()
+        private string getVoornaam()
         {
             return this.voornaam;
         }
 
-        private String getAchternaam()
+        private string getAchternaam()
         {
             return this.achternaam;
         }
