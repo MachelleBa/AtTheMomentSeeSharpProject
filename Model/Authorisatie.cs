@@ -11,17 +11,25 @@ namespace AtTheMomentSeeSharpSquad.Model
         private BetaalRekening gebruikerBetaalrekening;
         private Gebruiker gebruiker;
         private Pinpas pinpas;
-        private BetaalRekening betaalRekening;
-        private Authorisatie authorisatie;
+
+
+        public Authorisatie()
+        {
+            //maak hier in methodes om de gegevens op te halen
+            //this.gebruikerBetaalrekening = haalBetaalRekeningOp();
+            //this.gebruiker = haalGebruikerOp();
+            //this.pinpas = haalPinpasOp();
+        }
 
         public Authorisatie login()
         {
-            return this.authorisatie;
+            Authorisatie auth = new Authorisatie();
+            return auth;
         }
 
         public Authorisatie logout()
         {
-            return this.authorisatie;
+            //return this.authorisatie;
         }
 
         private void simulatePinPasInname()
@@ -46,7 +54,7 @@ namespace AtTheMomentSeeSharpSquad.Model
 
         public BetaalRekening getBetaalRekening()
         {
-            return this.betaalRekening;
+            return this.gebruikerBetaalrekening;
         }
     }
 }
