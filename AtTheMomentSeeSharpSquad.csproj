@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Authorisatie.cs" />
     <Compile Include="Model\BetaalRekening.cs" />
+    <Compile Include="Model\Gebruiker.cs" />
     <Compile Include="Model\Login.cs" />
+    <Compile Include="Model\Pinpas.cs" />
     <Compile Include="Model\Transactie.cs" />
     <Compile Include="Model\TransactieLijst.cs" />
     <Compile Include="View%28incl Controllers%29\Form1.cs">
