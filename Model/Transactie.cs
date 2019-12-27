@@ -31,6 +31,7 @@ namespace AtTheMomentSeeSharpSquad.Model
 
         private void printTransactieBon() { 
         
+            // *pruttelende printer geluiden*
         }
 
         public long getTransactieID() {
