@@ -8,16 +8,27 @@ namespace AtTheMomentSeeSharpSquad.Model
 {
     class BetaalRekening
     {
-        private string RekeningNummer;
+        private string rekeningNummer;
         // private List<Pinpas> pinpassenLijst; // = new List<Pinpas>();
         // private List<Transactie> transactieLijst; // = new List<Transactie>();
         // private Saldo saldo;
         // private Gebruiker gebruiker;
 
+        //public BetaalRekening(String rekeningNummer, List<Pinpas> pinpassenLijst, List<Transactie> transactieLijst, Saldo saldo, Gebruiker gebruiker)
+        //{
+
+        //    this.rekeningNummer = rekeningNummer;
+        //    this.pinpassenLijst = pinpassenLijst;
+        //    this.transactieLijst = transactieLijst;
+        //    this.saldo = saldo;
+        //    this.gebruiker = gebruiker;
+
+        //}
+
 
         public string getRekeningNummer() {
 
-            return this.RekeningNummer;
+            return this.rekeningNummer;
         }
 
         //gebruik cntrl+kc om een block code te commenten. Gebruik cntr+ku om te uncommenten!
@@ -32,6 +43,17 @@ namespace AtTheMomentSeeSharpSquad.Model
         //{
 
         //    return this.TransactieLijst;
+        //}
+
+        //public Saldo getSaldo() {
+
+        //    return this.saldo;
+        
+        //}
+
+        //public Gebruiker gebruiker() {
+
+        //    return this.gebruiker;
         //}
     }
 }
