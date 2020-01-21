@@ -15,15 +15,18 @@ namespace AtTheMomentSeeSharpSquad.Model
 
         public Authorisatie()
         {
-            //maak hier in methodes om de gegevens op te halen
-            //this.gebruikerBetaalrekening = haalBetaalRekeningOp();
-            //this.gebruiker = haalGebruikerOp();
-            //this.pinpas = haalPinpasOp();
+            login();
         }
 
         public Authorisatie login()
         {
-            Authorisatie auth = new Authorisatie();
+            //maak hier in methodes om de gegevens op te halen
+
+            //auth = null als input niet overeenkomt met een account in de database, anders, ga door met de code die hier onder staat
+
+            //this.gebruikerBetaalrekening = haalBetaalRekeningOp();
+            //this.gebruiker = haalGebruikerOp();
+            //this.pinpas = haalPinpasOp();
             return auth;
         }
 
