@@ -78,6 +78,12 @@
     <Compile Include="View%28incl Controllers%29\Account_Overzicht.Designer.cs">
       <DependentUpon>Account_Overzicht.cs</DependentUpon>
     </Compile>
+    <Compile Include="View%28incl Controllers%29\KiesPinpasOmInTeVoeren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View%28incl Controllers%29\KiesPinpasOmInTeVoeren.Designer.cs">
+      <DependentUpon>KiesPinpasOmInTeVoeren.cs</DependentUpon>
+    </Compile>
     <Compile Include="View%28incl Controllers%29\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View%28incl Controllers%29\KiesPinpasOmInTeVoeren.resx">
+      <DependentUpon>KiesPinpasOmInTeVoeren.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View%28incl Controllers%29\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
