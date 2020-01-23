@@ -65,6 +65,7 @@
     <Compile Include="Model\AutomaatSassy.cs" />
     <Compile Include="Model\BetaalRekening.cs" />
     <Compile Include="Model\BriefGeld.cs" />
+    <Compile Include="Model\DatabaseAccess.cs" />
     <Compile Include="Model\Gebruiker.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Pinpas.cs" />

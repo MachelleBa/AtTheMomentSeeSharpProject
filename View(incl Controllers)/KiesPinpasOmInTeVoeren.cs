@@ -16,5 +16,10 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

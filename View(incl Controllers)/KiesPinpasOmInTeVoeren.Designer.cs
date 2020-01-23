@@ -33,6 +33,7 @@
             this.PasNummer_Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Voornaam_Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Achternaam_Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgview_KiesPinpas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,11 +45,12 @@
             this.PasNummer_Col,
             this.Voornaam_Col,
             this.Achternaam_Col});
-            this.dgview_KiesPinpas.Location = new System.Drawing.Point(56, 73);
+            this.dgview_KiesPinpas.Location = new System.Drawing.Point(50, 58);
+            this.dgview_KiesPinpas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgview_KiesPinpas.Name = "dgview_KiesPinpas";
             this.dgview_KiesPinpas.RowHeadersWidth = 62;
             this.dgview_KiesPinpas.RowTemplate.Height = 28;
-            this.dgview_KiesPinpas.Size = new System.Drawing.Size(666, 305);
+            this.dgview_KiesPinpas.Size = new System.Drawing.Size(592, 244);
             this.dgview_KiesPinpas.TabIndex = 0;
             // 
             // RekeningNummer_Col
@@ -79,16 +81,29 @@
             this.Achternaam_Col.Name = "Achternaam_Col";
             this.Achternaam_Col.Width = 150;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(231, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Kies een pinpas om in te voeren";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // KiesPinpasOmInTeVoeren
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgview_KiesPinpas);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "KiesPinpasOmInTeVoeren";
             this.Text = "KiesPinpasOmInTeVoeren";
             ((System.ComponentModel.ISupportInitialize)(this.dgview_KiesPinpas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,5 +114,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PasNummer_Col;
         private System.Windows.Forms.DataGridViewTextBoxColumn Voornaam_Col;
         private System.Windows.Forms.DataGridViewTextBoxColumn Achternaam_Col;
+        private System.Windows.Forms.Label label1;
     }
 }
