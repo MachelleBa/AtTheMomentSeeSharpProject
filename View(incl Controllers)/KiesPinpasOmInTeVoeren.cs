@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AtTheMomentSeeSharpSquad.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,22 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         public KiesPinpasOmInTeVoeren(LoginForm loginform)
         {
             InitializeComponent();
+            //Dit werkt niet :C
+            Load += new EventHandler(KiesPinpasOmInTeVoeren_Load);
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void KiesPinpasOmInTeVoeren_Load(object sender, EventArgs e)
+        {
+            //Dit werkt niet :C
+            DatabaseAccess db = new DatabaseAccess();
+
+            dgview_pinpassenlijst.DataSource = db.getPinpassenLijst();
         }
     }
 }
