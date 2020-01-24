@@ -16,8 +16,9 @@ namespace AtTheMomentSeeSharpSquad.Model
         {
             try
             {
-                SqlConnection sqlconn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\machelle\Documents\Young Capital NEXT HBO\C# keuzevak\AtTheMomentSeeSharpProject\Database_SeeSharpSquad_ATM.mdf;Integrated Security = True"
-);
+                string sourceItem = AppDomain.CurrentDomain.BaseDirectory + "Database_SeeSharpSquad_ATM.mdf; Integrated Security = True";
+
+                SqlConnection sqlconn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + sourceItem);
 
 
                 sqlconn.Open();

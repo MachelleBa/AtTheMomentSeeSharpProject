@@ -30,7 +30,8 @@ namespace AtTheMomentSeeSharpSquad
      
             KiesPinpasOmInTeVoeren kiesPinpasForm = new KiesPinpasOmInTeVoeren(this);
             kiesPinpasForm.Show();
-            this.Hide();
+            PrintPinpassenLijstInLabel();
+            //this.Hide();
         }
 
         public void PrintPinpassenLijstInLabel()
@@ -43,9 +44,6 @@ namespace AtTheMomentSeeSharpSquad
                sql_test_label_loginForm.Text+= "pasnummer: " + pinpas.getPasNummer().ToString() + "  vervalDatum: " + pinpas.getVervalDatum().ToString()+ "\n";
 
             }
-
-
-
 
         }
     }
