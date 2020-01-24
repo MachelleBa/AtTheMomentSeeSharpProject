@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AtTheMomentSeeSharpSquad
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : MaterialSkin.Controls.MaterialForm
     {
         public LoginForm()
         {
@@ -44,6 +44,11 @@ namespace AtTheMomentSeeSharpSquad
                sql_test_label_loginForm.Text+= "pasnummer: " + pinpas.getPasNummer().ToString() + "  vervalDatum: " + pinpas.getVervalDatum().ToString()+ "\n";
 
             }
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

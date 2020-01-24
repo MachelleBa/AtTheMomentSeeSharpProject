@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 {
-    public partial class KiesPinpasOmInTeVoeren : Form
+    public partial class KiesPinpasOmInTeVoeren : MaterialSkin.Controls.MaterialForm
     {
         public KiesPinpasOmInTeVoeren(LoginForm loginform)
         {
