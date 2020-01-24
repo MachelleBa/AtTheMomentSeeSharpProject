@@ -19,17 +19,24 @@ namespace AtTheMomentSeeSharpSquad.Model
             this.vervalDatum = vervalDatum;
         }
 
-        private int getPasNummer()
+        //voor het weergeven van de pinpassenlijst
+        public Pinpas(int pasNummer, DateTime vervalDatum) {
+
+            this.pasNummer = pasNummer;
+            this.vervalDatum = vervalDatum;
+        
+        }
+        public int getPasNummer()
         {
             return this.pasNummer;
         }
 
-        private int getPinCode()
+        public int getPinCode()
         {
             return this.pinCode;
         }
 
-        private DateTime getVervalDatum()
+        public DateTime getVervalDatum()
         {
             return this.vervalDatum;
         }

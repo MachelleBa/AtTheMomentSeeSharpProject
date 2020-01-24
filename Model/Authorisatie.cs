@@ -15,11 +15,11 @@ namespace AtTheMomentSeeSharpSquad.Model
 
         public Authorisatie()
         {
-            login();
+            //login();
         }
 
-        public Authorisatie login()
-        {
+     //   public Authorisatie login()
+     //   {
             //maak hier in methodes om de gegevens op te halen
 
             //auth = null als input niet overeenkomt met een account in de database, anders, ga door met de code die hier onder staat
@@ -27,13 +27,13 @@ namespace AtTheMomentSeeSharpSquad.Model
             //this.gebruikerBetaalrekening = haalBetaalRekeningOp();
             //this.gebruiker = haalGebruikerOp();
             //this.pinpas = haalPinpasOp();
-            return auth;
-        }
+          //  return auth;
+      //  }
 
-        public Authorisatie logout()
-        {
-            //return this.authorisatie;
-        }
+        //public Authorisatie logout()
+        //{
+        //    //return this.authorisatie;
+        //}
 
         private void simulatePinPasInname()
         {

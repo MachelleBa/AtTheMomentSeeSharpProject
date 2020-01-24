@@ -54,11 +54,11 @@ namespace AtTheMomentSeeSharpSquad.Model
             return authorisatie;
         }
 
-        private Authorisatie logout()
-        {
-            authorisedGebruiker = null;
+        //private Authorisatie logout()
+        //{
+        //    authorisedGebruiker = null;
 
             
-        }
+        //}
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,55 @@ namespace AtTheMomentSeeSharpSquad.Model
     class DatabaseAccess
     {
         //connection string
-       // Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\machelle\Documents\Young Capital NEXT HBO\C# keuzevak\AtTheMomentSeeSharpProject\Database_SeeSharpSquad_ATM.mdf";Integrated Security = True
+        // Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\machelle\Documents\Young Capital NEXT HBO\C# keuzevak\AtTheMomentSeeSharpProject\Database_SeeSharpSquad_ATM.mdf";Integrated Security = True
+
+        private SqlConnection OpenConnDB() //Machelle
+        {
+            try
+            {
+                SqlConnection sqlconn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\machelle\Documents\Young Capital NEXT HBO\C# keuzevak\AtTheMomentSeeSharpProject\Database_SeeSharpSquad_ATM.mdf;Integrated Security = True"
+);
+
+
+                sqlconn.Open();
+
+                return sqlconn;
+
+            }
+            catch (SqlException e)
+            {
+                SqlConnection sqlconn = null;
+                //exception message needs to be passed to logic layer here
+                return sqlconn;
+            }
+        }
+        private void CloseConnDB(SqlConnection sqlconn) //Machelle
+        {
+            sqlconn.Close();
+        }
+
+        public List<Pinpas> getPinpassenLijst()
+        {
+            SqlConnection conn = OpenConnDB();
+            List<Pinpas> pinpas_list = new List<Pinpas>();
+
+            string query = "SELECT PasNummer, VervalDatum FROM Pinpas";
+
+            SqlCommand command = new SqlCommand(query, conn);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Pinpas pinpas = new Pinpas(Int32.Parse(reader["PasNummer"].ToString()), DateTime.Parse((reader["VervalDatum"].ToString())));
+                pinpas_list.Add(pinpas);
+            }
+
+            CloseConnDB(conn);
+            return pinpas_list;
+
+        }
+
+
+
     }
 }

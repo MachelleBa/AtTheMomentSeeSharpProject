@@ -12,7 +12,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 {
     public partial class KiesPinpasOmInTeVoeren : Form
     {
-        public KiesPinpasOmInTeVoeren()
+        public KiesPinpasOmInTeVoeren(LoginForm loginform)
         {
             InitializeComponent();
         }

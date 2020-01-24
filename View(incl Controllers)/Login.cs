@@ -1,4 +1,5 @@
-﻿using AtTheMomentSeeSharpSquad.View_incl_Controllers_;
+﻿using AtTheMomentSeeSharpSquad.Model;
+using AtTheMomentSeeSharpSquad.View_incl_Controllers_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,12 +22,31 @@ namespace AtTheMomentSeeSharpSquad
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Text = "I've changed. It's not you, it's me";
+            label1.Text = "It's not you, it's me: I've changed.";
         }
 
         private void btn_voer_pas_in_Click(object sender, EventArgs e)
         {
-            KiesPinpasOmInTeVoeren kiesPinpasForm = new KiesPinpasOmInTeVoeren();
+     
+            KiesPinpasOmInTeVoeren kiesPinpasForm = new KiesPinpasOmInTeVoeren(this);
+            kiesPinpasForm.Show();
+            this.Hide();
+        }
+
+        public void PrintPinpassenLijstInLabel()
+        {
+            DatabaseAccess db = new DatabaseAccess();
+            List<Pinpas> pinpassenlijst = db.getPinpassenLijst();
+
+            foreach (Pinpas pinpas in pinpassenlijst)
+            {
+               sql_test_label_loginForm.Text+= "pasnummer: " + pinpas.getPasNummer().ToString() + "  vervalDatum: " + pinpas.getVervalDatum().ToString()+ "\n";
+
+            }
+
+
+
+
         }
     }
 }
