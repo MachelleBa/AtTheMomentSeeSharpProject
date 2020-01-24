@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 {
-    public partial class Account_Overzicht : Form
+    public partial class Account_Overzicht : MaterialSkin.Controls.MaterialForm
     {
         public Account_Overzicht()
         {
             InitializeComponent();
+        }
+
+        private void Account_Overzicht_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

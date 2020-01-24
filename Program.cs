@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AtTheMomentSeeSharpSquad.View_incl_Controllers_;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace AtTheMomentSeeSharpSquad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new Account_Overzicht());
         }
     }
 }
