@@ -34,16 +34,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             this.dgview_pinpassenlijst = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgview_pinpassenlijst)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(231, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Kies een pinpas om in te voeren";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // dgview_pinpassenlijst
             // 
@@ -65,7 +56,6 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "KiesPinpasOmInTeVoeren";
             this.Text = "KiesPinpasOmInTeVoeren";
-            this.Load += new System.EventHandler(this.KiesPinpasOmInTeVoeren_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgview_pinpassenlijst)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
