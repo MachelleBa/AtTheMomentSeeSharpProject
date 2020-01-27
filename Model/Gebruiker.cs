@@ -20,7 +20,7 @@ namespace AtTheMomentSeeSharpSquad.Model
         }
 
         //Om bij het inloggen de lijst met pinpassen op te halen
-        public Gebruiker(string voornaam, string achternaam, string rekeningNummer, int pasNummer) {
+        public Gebruiker(string rekeningNummer, int pasNummer, string voornaam, string achternaam) {
             this.voornaam = voornaam;
             this.achternaam = achternaam;
             this.rekeningNummer = rekeningNummer;

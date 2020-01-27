@@ -34,7 +34,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
                     {
                         sdr.Read();
                         lb_transactie_idTxt.Text = sdr["transactieID"].ToString();
-                        lb_transactie_door.Text = sdr["transactionDoneBy"].ToString();
+                        lb_transactie_doorTxt.Text = sdr["transactionDoneBy"].ToString();
                         lb_van_betaalrekeningTxt.Text = sdr["sourceBetaalrekening"].ToString();
                         lb_naar_betaalrekeningTxt.Text = sdr["destinationBetaalrekening"].ToString();
                         lb_datumTxt.Text = sdr["date"].ToString();

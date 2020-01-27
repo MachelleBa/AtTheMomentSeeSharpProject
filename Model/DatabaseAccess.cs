@@ -73,7 +73,7 @@ namespace AtTheMomentSeeSharpSquad.Model
 
             while (reader.Read())
             {
-                Gebruiker gebruiker = new Gebruiker(reader["RekeningNummer"].ToString(), reader["FirstName"].ToString(), reader["LastName"].ToString(), Int32.Parse(reader["PasNummer"].ToString()));
+                Gebruiker gebruiker = new Gebruiker(reader["RekeningNummer"].ToString(), Int32.Parse(reader["PasNummer"].ToString()), reader["FirstName"].ToString(), reader["LastName"].ToString());
                 login_list.Add(gebruiker);
             }
 

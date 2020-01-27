@@ -111,7 +111,8 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 
             foreach (Gebruiker gebruiker in login_list)
             {
-                string[] temp = { gebruiker.getRekeningNummer(), gebruiker.getVoornaam() + " " + gebruiker.getAchternaam(), gebruiker.getPasNummer().ToString() };
+                string naamGebruiker = gebruiker.getVoornaam() + "\n" + gebruiker.getAchternaam();
+                string[] temp = { gebruiker.getRekeningNummer(), gebruiker.getPasNummer().ToString(), naamGebruiker };
                 dgview_pinpassenlijst.Rows.Add(temp);
 
                 materialLabel2.Text += gebruiker.getRekeningNummer() + "/n";
@@ -134,9 +135,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             //dgview_pinpassenlijst.Rows.Add(row5);
             //dgview_pinpassenlijst.Rows.Add(row6);
 
-            dgview_pinpassenlijst.Columns[0].DisplayIndex = 0;
-            dgview_pinpassenlijst.Columns[1].DisplayIndex = 1;
-            dgview_pinpassenlijst.Columns[2].DisplayIndex = 2;
+
 
 
         }
