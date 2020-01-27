@@ -35,6 +35,11 @@
             this.lb_geboortedatum = new MaterialSkin.Controls.MaterialLabel();
             this.lb_rekeningnummer = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_klantnummerTxt = new MaterialSkin.Controls.MaterialLabel();
+            this.lb_voornaamTxt = new MaterialSkin.Controls.MaterialLabel();
+            this.lb_achternaamTxt = new MaterialSkin.Controls.MaterialLabel();
+            this.lb_geboortedatumTxt = new MaterialSkin.Controls.MaterialLabel();
+            this.lb_rekeningnummerTxt = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,11 +118,81 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // lb_klantnummerTxt
+            // 
+            this.lb_klantnummerTxt.AutoSize = true;
+            this.lb_klantnummerTxt.Depth = 0;
+            this.lb_klantnummerTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lb_klantnummerTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_klantnummerTxt.Location = new System.Drawing.Point(341, 160);
+            this.lb_klantnummerTxt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_klantnummerTxt.Name = "lb_klantnummerTxt";
+            this.lb_klantnummerTxt.Size = new System.Drawing.Size(16, 18);
+            this.lb_klantnummerTxt.TabIndex = 2;
+            this.lb_klantnummerTxt.Text = "1";
+            // 
+            // lb_voornaamTxt
+            // 
+            this.lb_voornaamTxt.AutoSize = true;
+            this.lb_voornaamTxt.Depth = 0;
+            this.lb_voornaamTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lb_voornaamTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_voornaamTxt.Location = new System.Drawing.Point(341, 199);
+            this.lb_voornaamTxt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_voornaamTxt.Name = "lb_voornaamTxt";
+            this.lb_voornaamTxt.Size = new System.Drawing.Size(16, 18);
+            this.lb_voornaamTxt.TabIndex = 2;
+            this.lb_voornaamTxt.Text = "2";
+            // 
+            // lb_achternaamTxt
+            // 
+            this.lb_achternaamTxt.AutoSize = true;
+            this.lb_achternaamTxt.Depth = 0;
+            this.lb_achternaamTxt.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lb_achternaamTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_achternaamTxt.Location = new System.Drawing.Point(341, 238);
+            this.lb_achternaamTxt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_achternaamTxt.Name = "lb_achternaamTxt";
+            this.lb_achternaamTxt.Size = new System.Drawing.Size(17, 19);
+            this.lb_achternaamTxt.TabIndex = 2;
+            this.lb_achternaamTxt.Text = "3";
+            // 
+            // lb_geboortedatumTxt
+            // 
+            this.lb_geboortedatumTxt.AutoSize = true;
+            this.lb_geboortedatumTxt.Depth = 0;
+            this.lb_geboortedatumTxt.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lb_geboortedatumTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_geboortedatumTxt.Location = new System.Drawing.Point(340, 277);
+            this.lb_geboortedatumTxt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_geboortedatumTxt.Name = "lb_geboortedatumTxt";
+            this.lb_geboortedatumTxt.Size = new System.Drawing.Size(17, 19);
+            this.lb_geboortedatumTxt.TabIndex = 2;
+            this.lb_geboortedatumTxt.Text = "4";
+            // 
+            // lb_rekeningnummerTxt
+            // 
+            this.lb_rekeningnummerTxt.AutoSize = true;
+            this.lb_rekeningnummerTxt.Depth = 0;
+            this.lb_rekeningnummerTxt.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lb_rekeningnummerTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_rekeningnummerTxt.Location = new System.Drawing.Point(341, 316);
+            this.lb_rekeningnummerTxt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_rekeningnummerTxt.Name = "lb_rekeningnummerTxt";
+            this.lb_rekeningnummerTxt.Size = new System.Drawing.Size(17, 19);
+            this.lb_rekeningnummerTxt.TabIndex = 2;
+            this.lb_rekeningnummerTxt.Text = "5";
+            // 
             // Account_Overzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lb_rekeningnummerTxt);
+            this.Controls.Add(this.lb_geboortedatumTxt);
+            this.Controls.Add(this.lb_achternaamTxt);
+            this.Controls.Add(this.lb_voornaamTxt);
+            this.Controls.Add(this.lb_klantnummerTxt);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lb_rekeningnummer);
             this.Controls.Add(this.lb_geboortedatum);
@@ -141,5 +216,10 @@
         private MaterialSkin.Controls.MaterialLabel lb_geboortedatum;
         private MaterialSkin.Controls.MaterialLabel lb_rekeningnummer;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private MaterialSkin.Controls.MaterialLabel lb_klantnummerTxt;
+        private MaterialSkin.Controls.MaterialLabel lb_voornaamTxt;
+        private MaterialSkin.Controls.MaterialLabel lb_achternaamTxt;
+        private MaterialSkin.Controls.MaterialLabel lb_geboortedatumTxt;
+        private MaterialSkin.Controls.MaterialLabel lb_rekeningnummerTxt;
     }
 }
