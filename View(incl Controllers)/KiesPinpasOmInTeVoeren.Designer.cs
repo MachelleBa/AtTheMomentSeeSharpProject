@@ -30,40 +30,40 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dgview_pinpassenlijst = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgview_pinpassenlijst)).BeginInit();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
-
             // 
-            // dgview_pinpassenlijst
+            // materialLabel1
             // 
-            this.dgview_pinpassenlijst.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgview_pinpassenlijst.Location = new System.Drawing.Point(98, 73);
-            this.dgview_pinpassenlijst.Name = "dgview_pinpassenlijst";
-            this.dgview_pinpassenlijst.RowHeadersWidth = 51;
-            this.dgview_pinpassenlijst.RowTemplate.Height = 24;
-            this.dgview_pinpassenlijst.Size = new System.Drawing.Size(509, 194);
-            this.dgview_pinpassenlijst.TabIndex = 2;
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(214, 79);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(320, 24);
+            this.materialLabel1.TabIndex = 0;
+            this.materialLabel1.Text = "Selecteer een pinpas om in te voeren";
+            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // KiesPinpasOmInTeVoeren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
-            this.Controls.Add(this.dgview_pinpassenlijst);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(763, 486);
+            this.Controls.Add(this.materialLabel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "KiesPinpasOmInTeVoeren";
             this.Text = "KiesPinpasOmInTeVoeren";
-            ((System.ComponentModel.ISupportInitialize)(this.dgview_pinpassenlijst)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgview_pinpassenlijst;
+
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }

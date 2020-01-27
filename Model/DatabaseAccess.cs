@@ -59,6 +59,18 @@ namespace AtTheMomentSeeSharpSquad.Model
 
         }
 
+        public List<Object> getLoginOpties()
+        {
+            List<Object> loginOpties = new List<Object>();
+
+            SqlConnection conn = OpenConnDB();
+            string query = "SELECT "
+
+
+            return loginOpties;
+
+        }
+
 
 
     }
