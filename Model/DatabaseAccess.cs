@@ -65,7 +65,7 @@ namespace AtTheMomentSeeSharpSquad.Model
             List<Object> loginOpties = new List<Object>();
 
             SqlConnection conn = OpenConnDB();
-            string query = "SELECT "
+            //string query = "SELECT "
 
 
             return loginOpties;

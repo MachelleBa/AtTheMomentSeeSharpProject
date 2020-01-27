@@ -108,7 +108,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             DatabaseAccess db = new DatabaseAccess();
             List<Pinpas> pinpassenLijst = db.getPinpassenLijst();
 
-            foreach ()
+            //foreach ()
         //        string[] row0 = { "11/22/1968", "29", "Revolution 9",
         //        "Beatles", "The Beatles [White Album]" };
         //        string[] row1 = { "1960", "6", "Fools Rush In",
