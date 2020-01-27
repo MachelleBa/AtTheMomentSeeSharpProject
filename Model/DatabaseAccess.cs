@@ -11,6 +11,7 @@ namespace AtTheMomentSeeSharpSquad.Model
     {
         //connection string
         // Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\machelle\Documents\Young Capital NEXT HBO\C# keuzevak\AtTheMomentSeeSharpProject\Database_SeeSharpSquad_ATM.mdf";Integrated Security = True
+        // Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Gberuikers\sbouz\Documents\Keuzevak\AtTheMomentSeeSharpProject\Database_SeeSharpSquad_ATM.mdf";Integrated Security = True
 
         private SqlConnection OpenConnDB() //Machelle
         {
