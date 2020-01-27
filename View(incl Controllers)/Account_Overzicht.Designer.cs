@@ -46,74 +46,80 @@
             // lb_klantnummer
             // 
             this.lb_klantnummer.AutoSize = true;
+            this.lb_klantnummer.BackColor = System.Drawing.Color.Transparent;
             this.lb_klantnummer.Depth = 0;
             this.lb_klantnummer.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_klantnummer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_klantnummer.Location = new System.Drawing.Point(83, 160);
             this.lb_klantnummer.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_klantnummer.Name = "lb_klantnummer";
-            this.lb_klantnummer.Size = new System.Drawing.Size(98, 19);
+            this.lb_klantnummer.Size = new System.Drawing.Size(102, 19);
             this.lb_klantnummer.TabIndex = 0;
-            this.lb_klantnummer.Text = "Klantnummer";
+            this.lb_klantnummer.Text = "Klantnummer:";
             // 
             // lb_voornaam
             // 
             this.lb_voornaam.AutoSize = true;
+            this.lb_voornaam.BackColor = System.Drawing.Color.Transparent;
             this.lb_voornaam.Depth = 0;
-            this.lb_voornaam.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lb_voornaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lb_voornaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_voornaam.Location = new System.Drawing.Point(83, 199);
             this.lb_voornaam.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_voornaam.Name = "lb_voornaam";
-            this.lb_voornaam.Size = new System.Drawing.Size(79, 19);
+            this.lb_voornaam.Size = new System.Drawing.Size(81, 18);
             this.lb_voornaam.TabIndex = 0;
-            this.lb_voornaam.Text = "Voornaam";
+            this.lb_voornaam.Text = "Voornaam:";
             // 
             // lb_achternaam
             // 
             this.lb_achternaam.AutoSize = true;
+            this.lb_achternaam.BackColor = System.Drawing.Color.Transparent;
             this.lb_achternaam.Depth = 0;
             this.lb_achternaam.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_achternaam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_achternaam.Location = new System.Drawing.Point(83, 238);
             this.lb_achternaam.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_achternaam.Name = "lb_achternaam";
-            this.lb_achternaam.Size = new System.Drawing.Size(90, 19);
+            this.lb_achternaam.Size = new System.Drawing.Size(94, 19);
             this.lb_achternaam.TabIndex = 0;
-            this.lb_achternaam.Text = "Achternaam";
+            this.lb_achternaam.Text = "Achternaam:";
             // 
             // lb_geboortedatum
             // 
             this.lb_geboortedatum.AutoSize = true;
+            this.lb_geboortedatum.BackColor = System.Drawing.Color.Transparent;
             this.lb_geboortedatum.Depth = 0;
             this.lb_geboortedatum.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_geboortedatum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_geboortedatum.Location = new System.Drawing.Point(83, 277);
             this.lb_geboortedatum.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_geboortedatum.Name = "lb_geboortedatum";
-            this.lb_geboortedatum.Size = new System.Drawing.Size(113, 19);
+            this.lb_geboortedatum.Size = new System.Drawing.Size(117, 19);
             this.lb_geboortedatum.TabIndex = 0;
-            this.lb_geboortedatum.Text = "Geboortedatum";
+            this.lb_geboortedatum.Text = "Geboortedatum:";
             // 
             // lb_rekeningnummer
             // 
             this.lb_rekeningnummer.AutoSize = true;
+            this.lb_rekeningnummer.BackColor = System.Drawing.Color.Transparent;
             this.lb_rekeningnummer.Depth = 0;
             this.lb_rekeningnummer.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_rekeningnummer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_rekeningnummer.Location = new System.Drawing.Point(83, 316);
             this.lb_rekeningnummer.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_rekeningnummer.Name = "lb_rekeningnummer";
-            this.lb_rekeningnummer.Size = new System.Drawing.Size(125, 19);
+            this.lb_rekeningnummer.Size = new System.Drawing.Size(129, 19);
             this.lb_rekeningnummer.TabIndex = 0;
-            this.lb_rekeningnummer.Text = "Rekeningnummer";
+            this.lb_rekeningnummer.Text = "Rekeningnummer:";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(679, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(634, 136);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(165, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -121,67 +127,67 @@
             // lb_klantnummerTxt
             // 
             this.lb_klantnummerTxt.AutoSize = true;
+            this.lb_klantnummerTxt.BackColor = System.Drawing.Color.Transparent;
             this.lb_klantnummerTxt.Depth = 0;
             this.lb_klantnummerTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lb_klantnummerTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_klantnummerTxt.Location = new System.Drawing.Point(341, 160);
             this.lb_klantnummerTxt.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_klantnummerTxt.Name = "lb_klantnummerTxt";
-            this.lb_klantnummerTxt.Size = new System.Drawing.Size(16, 18);
+            this.lb_klantnummerTxt.Size = new System.Drawing.Size(0, 18);
             this.lb_klantnummerTxt.TabIndex = 2;
-            this.lb_klantnummerTxt.Text = "1";
             // 
             // lb_voornaamTxt
             // 
             this.lb_voornaamTxt.AutoSize = true;
+            this.lb_voornaamTxt.BackColor = System.Drawing.Color.Transparent;
             this.lb_voornaamTxt.Depth = 0;
             this.lb_voornaamTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lb_voornaamTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_voornaamTxt.Location = new System.Drawing.Point(341, 199);
             this.lb_voornaamTxt.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_voornaamTxt.Name = "lb_voornaamTxt";
-            this.lb_voornaamTxt.Size = new System.Drawing.Size(16, 18);
+            this.lb_voornaamTxt.Size = new System.Drawing.Size(0, 18);
             this.lb_voornaamTxt.TabIndex = 2;
-            this.lb_voornaamTxt.Text = "2";
             // 
             // lb_achternaamTxt
             // 
             this.lb_achternaamTxt.AutoSize = true;
+            this.lb_achternaamTxt.BackColor = System.Drawing.Color.Transparent;
             this.lb_achternaamTxt.Depth = 0;
             this.lb_achternaamTxt.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_achternaamTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_achternaamTxt.Location = new System.Drawing.Point(341, 238);
             this.lb_achternaamTxt.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_achternaamTxt.Name = "lb_achternaamTxt";
-            this.lb_achternaamTxt.Size = new System.Drawing.Size(17, 19);
+            this.lb_achternaamTxt.Size = new System.Drawing.Size(0, 19);
             this.lb_achternaamTxt.TabIndex = 2;
-            this.lb_achternaamTxt.Text = "3";
             // 
             // lb_geboortedatumTxt
             // 
             this.lb_geboortedatumTxt.AutoSize = true;
+            this.lb_geboortedatumTxt.BackColor = System.Drawing.Color.Transparent;
             this.lb_geboortedatumTxt.Depth = 0;
             this.lb_geboortedatumTxt.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_geboortedatumTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_geboortedatumTxt.Location = new System.Drawing.Point(340, 277);
             this.lb_geboortedatumTxt.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_geboortedatumTxt.Name = "lb_geboortedatumTxt";
-            this.lb_geboortedatumTxt.Size = new System.Drawing.Size(17, 19);
+            this.lb_geboortedatumTxt.Size = new System.Drawing.Size(0, 19);
             this.lb_geboortedatumTxt.TabIndex = 2;
-            this.lb_geboortedatumTxt.Text = "4";
             // 
             // lb_rekeningnummerTxt
             // 
             this.lb_rekeningnummerTxt.AutoSize = true;
+            this.lb_rekeningnummerTxt.BackColor = System.Drawing.Color.Transparent;
             this.lb_rekeningnummerTxt.Depth = 0;
             this.lb_rekeningnummerTxt.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_rekeningnummerTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lb_rekeningnummerTxt.Location = new System.Drawing.Point(341, 316);
             this.lb_rekeningnummerTxt.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_rekeningnummerTxt.Name = "lb_rekeningnummerTxt";
-            this.lb_rekeningnummerTxt.Size = new System.Drawing.Size(17, 19);
+            this.lb_rekeningnummerTxt.Size = new System.Drawing.Size(0, 19);
             this.lb_rekeningnummerTxt.TabIndex = 2;
-            this.lb_rekeningnummerTxt.Text = "5";
             // 
             // Account_Overzicht
             // 

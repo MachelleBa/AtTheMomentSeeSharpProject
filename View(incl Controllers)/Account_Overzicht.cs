@@ -20,13 +20,12 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 
         private void Account_Overzicht_Load(object sender, EventArgs e)
         {
-            //string sourceItem = AppDomain.CurrentDomain.BaseDirectory + "Database_SeeSharpSquad_ATM.mdf; Integrated Security = True";
-            //SqlConnection sqlconn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + sourceItem);
+            string sourceItem = AppDomain.CurrentDomain.BaseDirectory + "Database_SeeSharpSquad_ATM.mdf; Integrated Security = True";
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + sourceItem);
 
-            string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=.\Database_SeeSharpSquad_ATM.mdf; Integrated Security = True";
-            using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT KlantNummer, LastName, FirstName, BirthDate, RekeningNummer FROM Klant WHERE id=1"))
+                //binnen sql commando moet straks de klantnummer dynamisch zijn aan de hand van de ingelogde gebruiker!
+                using (SqlCommand cmd = new SqlCommand("SELECT KlantNummer, LastName, FirstName, BirthDate, RekeningNummer FROM Klant WHERE KlantNummer = 1"))
                 {
                     cmd.CommandType = CommandType.Text;
                     cmd.Connection = con;

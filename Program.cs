@@ -17,7 +17,7 @@ namespace AtTheMomentSeeSharpSquad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Account_Overzicht());
+            Application.Run(new LoginForm());
         }
     }
 }
