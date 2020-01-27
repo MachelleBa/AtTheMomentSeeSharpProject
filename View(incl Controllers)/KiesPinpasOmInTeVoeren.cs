@@ -18,7 +18,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         {
             InitializeComponent();
             SetUpDataGridView();
-            //  PopulateDataGridView();
+            PopulateDataGridView();
 
         }
 
@@ -106,37 +106,39 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             private void PopulateDataGridView()
             {
             DatabaseAccess db = new DatabaseAccess();
-            List<Pinpas> pinpassenLijst = db.getPinpassenLijst();
+            List<Gebruiker> login_list = db.getLoginOpties();
 
-            foreach ()
-        //        string[] row0 = { "11/22/1968", "29", "Revolution 9",
-        //        "Beatles", "The Beatles [White Album]" };
-        //        string[] row1 = { "1960", "6", "Fools Rush In",
-        //        "Frank Sinatra", "Nice 'N' Easy" };
-        //        string[] row2 = { "11/11/1971", "1", "One of These Days",
-        //        "Pink Floyd", "Meddle" };
-        //        string[] row3 = { "1988", "7", "Where Is My Mind?",
-        //        "Pixies", "Surfer Rosa" };
-        //        string[] row4 = { "5/1981", "9", "Can't Find My Mind",
-        //        "Cramps", "Psychedelic Jungle" };
-        //        string[] row5 = { "6/10/2003", "13",
-        //        "Scatterbrain. (As Dead As Leaves.)",
-        //        "Radiohead", "Hail to the Thief" };
-        //        string[] row6 = { "6/30/1992", "3", "Dress", "P J Harvey", "Dry" };
 
-        //        dgview_pinpassenlijst.Rows.Add(row0);
-        //        dgview_pinpassenlijst.Rows.Add(row1);
-        //        dgview_pinpassenlijst.Rows.Add(row2);
-        //        dgview_pinpassenlijst.Rows.Add(row3);
-        //        dgview_pinpassenlijst.Rows.Add(row4);
-        //        dgview_pinpassenlijst.Rows.Add(row5);
-        //        dgview_pinpassenlijst.Rows.Add(row6);
+            foreach (Gebruiker gebruiker in login_list)
+            {
+                string[] temp = { gebruiker.getRekeningNummer(), gebruiker.getVoornaam() + " " + gebruiker.getAchternaam(), gebruiker.getPasNummer().ToString() };
+                dgview_pinpassenlijst.Rows.Add(temp);
 
-        //        dgview_pinpassenlijst.Columns[0].DisplayIndex = 3;
-        //        dgview_pinpassenlijst.Columns[1].DisplayIndex = 4;
-        //        dgview_pinpassenlijst.Columns[2].DisplayIndex = 0;
-        //        dgview_pinpassenlijst.Columns[3].DisplayIndex = 1;
-        //        dgview_pinpassenlijst.Columns[4].DisplayIndex = 2;
+                materialLabel2.Text += gebruiker.getRekeningNummer() + "/n";
             }
+            //string[] row0 = { "11/22/1968", "29", "Revolution 9" };
+            //string[] row1 = { "1960", "6", "Fools Rush In" };
+            //string[] row2 = { "11/11/1971", "1", "One of These Days" };
+            //string[] row3 = { "1988", "7", "Where Is My Mind?" };
+            //string[] row4 = { "5/1981", "9", "Can't Find My Mind" };
+            //string[] row5 = { "6/10/2003", "13",
+            //        "Scatterbrain. (As Dead As Leaves.)"
+            //         };
+            //string[] row6 = { "6/30/1992", "3", "Dress" };
+
+
+            //dgview_pinpassenlijst.Rows.Add(row1);
+            //dgview_pinpassenlijst.Rows.Add(row2);
+            //dgview_pinpassenlijst.Rows.Add(row3);
+            //dgview_pinpassenlijst.Rows.Add(row4);
+            //dgview_pinpassenlijst.Rows.Add(row5);
+            //dgview_pinpassenlijst.Rows.Add(row6);
+
+            dgview_pinpassenlijst.Columns[0].DisplayIndex = 0;
+            dgview_pinpassenlijst.Columns[1].DisplayIndex = 1;
+            dgview_pinpassenlijst.Columns[2].DisplayIndex = 2;
+
+
+        }
     }
 }

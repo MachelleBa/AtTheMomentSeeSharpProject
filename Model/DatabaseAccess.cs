@@ -60,15 +60,26 @@ namespace AtTheMomentSeeSharpSquad.Model
 
         }
 
-        public List<Object> getLoginOpties()
-        {
-            List<Object> loginOpties = new List<Object>();
+        //Om de lijst met pinpassen weer te kunnen geven
+        public List<Gebruiker> getLoginOpties() { 
+        
+            List<Gebruiker> login_list = new List<Gebruiker>();
 
             SqlConnection conn = OpenConnDB();
-            string query = "SELECT "
+            string query = "SELECT RekeningNummer, FirstName, LastName, PasNummer FROM Klant INNER JOIN Pinpas ON Klant.PinpasID = Pinpas.PinpasId";
 
+            SqlCommand command = new SqlCommand(query, conn);
+            SqlDataReader reader = command.ExecuteReader();
 
-            return loginOpties;
+            while (reader.Read())
+            {
+                Gebruiker gebruiker = new Gebruiker(reader["RekeningNummer"].ToString(), reader["FirstName"].ToString(), reader["LastName"].ToString(), Int32.Parse(reader["PasNummer"].ToString()));
+                login_list.Add(gebruiker);
+            }
+
+            CloseConnDB(conn);
+
+            return login_list;
 
         }
 

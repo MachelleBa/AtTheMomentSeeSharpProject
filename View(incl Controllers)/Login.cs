@@ -30,7 +30,7 @@ namespace AtTheMomentSeeSharpSquad
      
             KiesPinpasOmInTeVoeren kiesPinpasForm = new KiesPinpasOmInTeVoeren(this);
             kiesPinpasForm.Show();
-            PrintPinpassenLijstInLabel();
+            PrintGebruikersLijstInlogInLabel();
             //this.Hide();
         }
 
@@ -45,6 +45,17 @@ namespace AtTheMomentSeeSharpSquad
 
             }
 
+        }
+
+        public void PrintGebruikersLijstInlogInLabel()
+        {
+            DatabaseAccess db = new DatabaseAccess();
+            List<Gebruiker> login_list = db.getLoginOpties();
+
+            foreach (Gebruiker gebruiker in login_list)
+            {
+                sql_test_label_loginForm.Text += "rekeningNummer: " + gebruiker.getRekeningNummer().ToString() + "\n";
+            }
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
