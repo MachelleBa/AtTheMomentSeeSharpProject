@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using AtTheMomentSeeSharpSquad.Model;
 
 namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 {
     public partial class Account_Overzicht : MaterialSkin.Controls.MaterialForm
     {
-        public Account_Overzicht()
+        private CashWithdraw cashForm;
+        public Account_Overzicht(Gebruiker gebruiker, CashWithdraw cashForm)
         {
             InitializeComponent();
+            this.cashForm = cashForm;
         }
 
         private void Account_Overzicht_Load(object sender, EventArgs e)
@@ -42,6 +45,13 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
                     con.Close();
                 }
             }
+        }
+
+        private void btn_Cash_Withdraw_Click(object sender, EventArgs e)
+        {
+            this.cashForm.Show();
+            this.Hide();
+            
         }
     }
 }

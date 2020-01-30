@@ -30,8 +30,8 @@ namespace AtTheMomentSeeSharpSquad
      
             KiesPinpasOmInTeVoeren kiesPinpasForm = new KiesPinpasOmInTeVoeren(this);
             kiesPinpasForm.Show();
-            PrintGebruikersLijstInlogInLabel();
-            //this.Hide();
+            //PrintGebruikersLijstInlogInLabel();
+            this.Hide();
         }
 
         public void PrintPinpassenLijstInLabel()

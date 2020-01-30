@@ -14,11 +14,13 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
     public partial class KiesPinpasOmInTeVoeren : MaterialSkin.Controls.MaterialForm
     {
         private DataGridView dgview_pinpassenlijst = new DataGridView();
+        private LoginForm loginForm;
         public KiesPinpasOmInTeVoeren(LoginForm loginform)
         {
             InitializeComponent();
             SetUpDataGridView();
             PopulateDataGridView();
+            this.loginForm = loginform;
 
         }
 
@@ -95,7 +97,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 
             MessageBox.Show("Login Succesful");
 
-            CashWithdraw cashWindow = new CashWithdraw(authorisedGebruiker);
+            CashWithdraw cashWindow = new CashWithdraw(authorisedGebruiker, this.loginForm);
             
             cashWindow.Show();
 

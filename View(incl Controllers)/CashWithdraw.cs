@@ -13,8 +13,15 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 {
     public partial class CashWithdraw : MaterialSkin.Controls.MaterialForm
     {
-        public CashWithdraw(Model.Gebruiker gebruiker)
+
+        private Gebruiker gebruiker;
+        private LoginForm loginForm;
+
+        public CashWithdraw(Model.Gebruiker gebruiker, LoginForm loginForm)
         {
+            this.loginForm = loginForm;
+            this.gebruiker = gebruiker;
+
             DatabaseAccess db = new DatabaseAccess();
 
             InitializeComponent();
@@ -29,6 +36,20 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_account_info_Click(object sender, EventArgs e)
+        {
+            Account_Overzicht accountForm = new Account_Overzicht(gebruiker, this);
+            accountForm.Show();
+            this.Hide();
+
+        }
+
+        private void btn_log_out_Click(object sender, EventArgs e)
+        {
+            this.loginForm.Show();
+            this.Hide();
         }
     }
 }
