@@ -105,15 +105,6 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
 
             private void PopulateDataGridView()
             {
@@ -127,28 +118,7 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
                 string[] temp = { gebruiker.getRekeningNummer(), gebruiker.getPasNummer().ToString(), naamGebruiker };
                 dgview_pinpassenlijst.Rows.Add(temp);
 
-                materialLabel2.Text += gebruiker.getRekeningNummer() + "/n";
             }
-            //string[] row0 = { "11/22/1968", "29", "Revolution 9" };
-            //string[] row1 = { "1960", "6", "Fools Rush In" };
-            //string[] row2 = { "11/11/1971", "1", "One of These Days" };
-            //string[] row3 = { "1988", "7", "Where Is My Mind?" };
-            //string[] row4 = { "5/1981", "9", "Can't Find My Mind" };
-            //string[] row5 = { "6/10/2003", "13",
-            //        "Scatterbrain. (As Dead As Leaves.)"
-            //         };
-            //string[] row6 = { "6/30/1992", "3", "Dress" };
-
-
-            //dgview_pinpassenlijst.Rows.Add(row1);
-            //dgview_pinpassenlijst.Rows.Add(row2);
-            //dgview_pinpassenlijst.Rows.Add(row3);
-            //dgview_pinpassenlijst.Rows.Add(row4);
-            //dgview_pinpassenlijst.Rows.Add(row5);
-            //dgview_pinpassenlijst.Rows.Add(row6);
-
-
-
 
         }
     }

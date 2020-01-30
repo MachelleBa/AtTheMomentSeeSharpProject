@@ -36,20 +36,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(213, 93);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(284, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 13);
+            this.label1.Size = new System.Drawing.Size(207, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welkom, Log in om te beginnen";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_voer_pas_in
             // 
-            this.btn_voer_pas_in.Location = new System.Drawing.Point(226, 142);
-            this.btn_voer_pas_in.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_voer_pas_in.Location = new System.Drawing.Point(301, 175);
+            this.btn_voer_pas_in.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_voer_pas_in.Name = "btn_voer_pas_in";
-            this.btn_voer_pas_in.Size = new System.Drawing.Size(116, 27);
+            this.btn_voer_pas_in.Size = new System.Drawing.Size(155, 33);
             this.btn_voer_pas_in.TabIndex = 1;
             this.btn_voer_pas_in.Text = "Voer pinpas in";
             this.btn_voer_pas_in.UseVisualStyleBackColor = true;
@@ -58,22 +57,22 @@
             // sql_test_label_loginForm
             // 
             this.sql_test_label_loginForm.AutoSize = true;
-            this.sql_test_label_loginForm.Location = new System.Drawing.Point(213, 215);
-            this.sql_test_label_loginForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.sql_test_label_loginForm.BackColor = System.Drawing.Color.Transparent;
+            this.sql_test_label_loginForm.Location = new System.Drawing.Point(284, 265);
             this.sql_test_label_loginForm.Name = "sql_test_label_loginForm";
-            this.sql_test_label_loginForm.Size = new System.Drawing.Size(35, 13);
+            this.sql_test_label_loginForm.Size = new System.Drawing.Size(28, 17);
             this.sql_test_label_loginForm.TabIndex = 2;
-            this.sql_test_label_loginForm.Text = "label2";
+            this.sql_test_label_loginForm.Text = "     ";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.sql_test_label_loginForm);
             this.Controls.Add(this.btn_voer_pas_in);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.Text = "SeeSharpSquad - ATM";
             this.Load += new System.EventHandler(this.LoginForm_Load);

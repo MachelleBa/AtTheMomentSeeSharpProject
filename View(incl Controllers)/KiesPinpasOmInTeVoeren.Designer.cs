@@ -31,7 +31,6 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         private void InitializeComponent()
         {
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -47,27 +46,13 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             this.materialLabel1.Size = new System.Drawing.Size(320, 24);
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "Selecteer een pinpas om in te voeren";
-            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(699, 151);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(136, 24);
-            this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "materialLabel2";
+
             // 
             // KiesPinpasOmInTeVoeren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 486);
-            this.Controls.Add(this.materialLabel2);
+            this.ClientSize = new System.Drawing.Size(721, 486);
             this.Controls.Add(this.materialLabel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "KiesPinpasOmInTeVoeren";
@@ -80,6 +65,5 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         #endregion
 
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
     }
 }
