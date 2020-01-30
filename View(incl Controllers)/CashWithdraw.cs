@@ -51,5 +51,33 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             this.loginForm.Show();
             this.Hide();
         }
+
+        private void btn_10eu_Click(object sender, EventArgs e)
+        {
+            lbl_saldo.Text = "€ " + SchrijfSaldoAf(10).ToString("0.##");
+        }
+
+        private void btn_20eu_Click(object sender, EventArgs e)
+        {
+            lbl_saldo.Text = "€ " + SchrijfSaldoAf(20).ToString("0.##");
+        }
+
+        private void btn_50eu_Click(object sender, EventArgs e)
+        {
+            lbl_saldo.Text = "€ " + SchrijfSaldoAf(50).ToString("0.##");
+        }
+
+        private void btn_100eu_Click(object sender, EventArgs e)
+        {            
+            lbl_saldo.Text = "€ " + SchrijfSaldoAf(100).ToString("0.##");
+        }
+
+        private double SchrijfSaldoAf(double aftrekbaar)
+        {
+            DatabaseAccess db = new DatabaseAccess();
+            double nieuwSaldo = db.schrijfSaldoAf(aftrekbaar, this.gebruiker);
+
+            return nieuwSaldo;
+        }
     }
 }

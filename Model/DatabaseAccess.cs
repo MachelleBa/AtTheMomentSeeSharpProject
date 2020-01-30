@@ -104,6 +104,25 @@ namespace AtTheMomentSeeSharpSquad.Model
             return saldo;
         }
 
+        public double schrijfSaldoAf(double aftrekbaar, Gebruiker gebruiker)
+        {
+            SqlConnection conn = OpenConnDB();
+            string query = "UPDATE BetaalRekening SET Saldo = Saldo - @aftrekbaar WHERE RekeningNummer = @rekeningNummer";
+
+
+
+            SqlCommand command = new SqlCommand(query, conn);
+            command.Parameters.AddWithValue("@aftrekbaar", aftrekbaar); //dit voorkomt SQL injection!
+            command.Parameters.AddWithValue("@rekeningNummer", gebruiker.getRekeningNummer()); //dit voorkomt SQL injection!
+            command.ExecuteNonQuery(); //deze returnt geen rows
+
+            conn.Close();
+
+
+            double nieuwSaldo = haalSaldoOP(gebruiker);
+            return nieuwSaldo;
+        }
+
 
 
     }

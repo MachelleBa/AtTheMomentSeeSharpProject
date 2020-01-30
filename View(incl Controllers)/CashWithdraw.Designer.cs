@@ -61,6 +61,7 @@
             this.btn_10eu.TabIndex = 0;
             this.btn_10eu.Text = "10 euro";
             this.btn_10eu.UseVisualStyleBackColor = false;
+            this.btn_10eu.Click += new System.EventHandler(this.btn_10eu_Click);
             // 
             // btn_20eu
             // 
@@ -77,6 +78,7 @@
             this.btn_20eu.TabIndex = 1;
             this.btn_20eu.Text = "20 euro";
             this.btn_20eu.UseVisualStyleBackColor = false;
+            this.btn_20eu.Click += new System.EventHandler(this.btn_20eu_Click);
             // 
             // btn_50eu
             // 
@@ -93,6 +95,7 @@
             this.btn_50eu.TabIndex = 2;
             this.btn_50eu.Text = "50 euro";
             this.btn_50eu.UseVisualStyleBackColor = false;
+            this.btn_50eu.Click += new System.EventHandler(this.btn_50eu_Click);
             // 
             // materialLabel1
             // 
@@ -122,6 +125,7 @@
             this.btn_100eu.TabIndex = 4;
             this.btn_100eu.Text = "100 euro";
             this.btn_100eu.UseVisualStyleBackColor = false;
+            this.btn_100eu.Click += new System.EventHandler(this.btn_100eu_Click);
             // 
             // materialLabel2
             // 
