@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -76,6 +77,8 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
         {
             DatabaseAccess db = new DatabaseAccess();
             double nieuwSaldo = db.schrijfSaldoAf(aftrekbaar, this.gebruiker);
+            Thread.Sleep(1500);
+            MessageBox.Show("Opname geslaagd, vergeet niet uw geld uit te nemen!");
 
             return nieuwSaldo;
         }
