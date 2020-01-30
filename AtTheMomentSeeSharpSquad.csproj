@@ -82,6 +82,12 @@
     <Compile Include="View%28incl Controllers%29\Account_Overzicht.Designer.cs">
       <DependentUpon>Account_Overzicht.cs</DependentUpon>
     </Compile>
+    <Compile Include="View%28incl Controllers%29\CashWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View%28incl Controllers%29\CashWithdraw.Designer.cs">
+      <DependentUpon>CashWithdraw.cs</DependentUpon>
+    </Compile>
     <Compile Include="View%28incl Controllers%29\KiesPinpasOmInTeVoeren.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="View%28incl Controllers%29\Account_Overzicht.resx">
       <DependentUpon>Account_Overzicht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View%28incl Controllers%29\CashWithdraw.resx">
+      <DependentUpon>CashWithdraw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View%28incl Controllers%29\KiesPinpasOmInTeVoeren.resx">
       <DependentUpon>KiesPinpasOmInTeVoeren.cs</DependentUpon>

@@ -91,6 +91,16 @@ namespace AtTheMomentSeeSharpSquad.View_incl_Controllers_
             int pasNummer = Int32.Parse(selectedRow.Cells[1].Value.ToString());
             string klantNaam = selectedRow.Cells[2].Value.ToString();
 
+            Gebruiker authorisedGebruiker = new Gebruiker(rekeningNummer, pasNummer, klantNaam);
+
+            MessageBox.Show("Login Succesful");
+
+            CashWithdraw cashWindow = new CashWithdraw(authorisedGebruiker);
+            
+            cashWindow.Show();
+
+            this.Close();
+
         }
 
         private void label1_Click(object sender, EventArgs e)

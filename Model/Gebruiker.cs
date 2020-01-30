@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AtTheMomentSeeSharpSquad.Model
 {
-    class Gebruiker
+    public class Gebruiker
     {
         private string voornaam;
         private string achternaam;
@@ -25,6 +25,13 @@ namespace AtTheMomentSeeSharpSquad.Model
             this.achternaam = achternaam;
             this.rekeningNummer = rekeningNummer;
             this.pasNummer = pasNummer;        
+        }
+
+        public Gebruiker(string rekeningNummer, int pasNummer, string volledigeNaam)
+        {
+            this.rekeningNummer = rekeningNummer;
+            this.pasNummer = pasNummer;
+            this.voornaam = volledigeNaam;
         }
 
         public string getVoornaam()

@@ -83,6 +83,27 @@ namespace AtTheMomentSeeSharpSquad.Model
 
         }
 
+        public double haalSaldoOP(Gebruiker gebruiker)
+        {
+
+            SqlConnection conn = OpenConnDB();
+            string query = "SELECT Saldo FROM BetaalRekening INNER JOIN Klant ON BetaalRekening.RekeningNummer = Klant.RekeningNummer WHERE BetaalRekening.RekeningNummer = @rekeningNummer";
+
+            SqlCommand command = new SqlCommand(query, conn);
+            command.Parameters.AddWithValue("@rekeningNummer", gebruiker.getRekeningNummer()); //dit voorkomt SQL injection!
+            SqlDataReader reader = command.ExecuteReader();
+            double saldo = 0;
+
+            if (reader.Read())
+            {
+                 saldo = double.Parse(reader["Saldo"].ToString());
+            }
+
+            conn.Close();
+
+            return saldo;
+        }
+
 
 
     }
